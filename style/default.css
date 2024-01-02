@@ -42,7 +42,6 @@ svg {
 
 h1,
 h2 {
-  margin: 0;
   font-family: Cormorant, serif;
   font-weight: 700;
   font-size: 70px;
@@ -51,23 +50,21 @@ h2 {
   letter-spacing: 0.01em;
 }
 
-/*
-Пример контейнера
-
-Если контейнер 1180px по макету,
-то для max-width прибавляем паддинги 30px*2, 
-в итоге 1240px
-Чтобы контент не прижимался к краям экрана
-*/
-
 .container {
-  max-width: 1290px;
-
+  max-width: 1390px;
   margin: 0 auto;
+  padding: 0 50px;
 }
 
 .hide {
   display: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 ul {
@@ -88,4 +85,28 @@ input {
 
 button {
   cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 42px;
+  }
+}
+
+@media (max-width: 1240px) {
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 39px;
+  }
+}
+
+@media (max-width: 760px) {
+}
+
+@media (max-width: 580px) {
+  .container {
+    padding: 0 10px;
+  }
 }
