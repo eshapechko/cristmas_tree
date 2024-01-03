@@ -47,6 +47,7 @@
 
     <script src="garland/garland.js" defer></script>
     <script src="snow/snow.js" defer></script>
+    <script src="script/burger.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -67,16 +68,16 @@
         <nav class="header__navigation navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="">Пихта Фразера</a>
+              <a class="navigation__link" href="#one">Пихта Фразера</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="">Русская ель</a>
+              <a class="navigation__link" href="#two">Русская ель</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="">Сибирская пихта</a>
+              <a class="navigation__link" href="#three">Сибирская пихта</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="">Как оплатить?</a>
+              <a class="navigation__link" href="#pay">Как оплатить?</a>
             </li>
           </ul>
         </nav>
@@ -173,15 +174,16 @@
       <section class="product" id="two">
         <div class="container product__container">
           <div class="product__content">
-            <h2 class="product__title">Пихта Фразера</h2>
+            <h2 class="product__title">Русская ель</h2>
             <p class="product__features">
-              Пихта Фразера чаще использовалась в качестве рождественской ёлки
-              Белого дома
+              Русская ель — наиболее традиционная разновидность рождественских
+              деревьев, которую можно встретить в большинстве советских фильмов
+              про новый год
             </p>
             <p class="product__description">
-              Мягкий аромат, форма, и способность сохранять мягкие иголки в
-              течение длительного времени, делают её одним из лучших деревьев
-              для рождества
+              Отличительной особенностью русской ёлки являются выраженный
+              хвойный запах, короткие колючие иголки и сравнительно менее пышная
+              крона
             </p>
 
             <div class="product__button-wrapper">
@@ -196,7 +198,7 @@
 
           <img
             class="product__picture"
-            src="images/fraser.jpg"
+            src="images/russian.jpg"
             alt="Пихта Фразера"
             width="630"
             height="590"
@@ -206,15 +208,14 @@
       <section class="product" id="three">
         <div class="container product__container">
           <div class="product__content">
-            <h2 class="product__title">Пихта Фразера</h2>
+            <h2 class="product__title">Сибирская пихта</h2>
             <p class="product__features">
-              Пихта Фразера чаще использовалась в качестве рождественской ёлки
-              Белого дома
+              Пихта сибирская является одной из самых красивых и ароматных
+              хвойных пород и ее часто можно встретить в парках и садах
             </p>
             <p class="product__description">
-              Мягкий аромат, форма, и способность сохранять мягкие иголки в
-              течение длительного времени, делают её одним из лучших деревьев
-              для рождества
+              Хвоя Сибирской пихты в отличии от еловой крупнее, зеленее,
+              совершенно не колючая и мягкая как трава
             </p>
 
             <div class="product__button-wrapper">
@@ -229,14 +230,14 @@
 
           <img
             class="product__picture"
-            src="images/fraser.jpg"
+            src="images/sibir.jpg"
             alt="Пихта Фразера"
             width="630"
             height="590"
           />
         </div>
       </section>
-      <section class="pay">
+      <section class="pay" id="pay">
         <div class="container">
           <h2 class="pay__title">Как можно оплатить</h2>
 
@@ -392,9 +393,15 @@
 
         <div class="footer__team">
           <p class="footer__item">
-            Дизайн:
+            Developer:
+            <a class="footer__link" href="https://t.me/eshapechko"
+              >@eshapechko</a
+            >
+          </p>
+          <p class="footer__item">
+            Designer:
             <a class="footer__link" href="https://t.me/Mrshmallowww"
-              >@Mrshmallowww</a
+              >@mrshmallowww</a
             >
           </p>
           <p class="footer__item">2024 год</p>
