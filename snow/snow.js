@@ -32,6 +32,12 @@ const createSnow = (min, max, saturation) => {
       transform: translateY(100vh);
     }
   }
+
+  @media (max-width: 1000px) {
+    .snow {
+      display: none;
+    }
+  }
   `;
 
   const count = 4;
@@ -61,4 +67,4 @@ const createSnow = (min, max, saturation) => {
   setInterval(createSnowItem, saturation);
 };
 
-createSnow(5, 20, 300);
+createSnow(5, 20, 100);
