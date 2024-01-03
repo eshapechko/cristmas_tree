@@ -62,4 +62,4 @@ const garlandInit = () => {
   }, 500);
 };
 
-// garlandInit();
+garlandInit();
