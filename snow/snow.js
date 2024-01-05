@@ -16,6 +16,7 @@ const createSnow = (min, max, saturation) => {
   }
 
   .snow {
+    z-index: 999;
     position: fixed;
     width: 20px;
     height: 20px;
@@ -67,4 +68,4 @@ const createSnow = (min, max, saturation) => {
   setInterval(createSnowItem, saturation);
 };
 
-// createSnow(5, 20, 100);
+createSnow(5, 20, 100);

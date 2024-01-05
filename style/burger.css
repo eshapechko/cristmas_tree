@@ -54,7 +54,6 @@
 .burger_active:after {
   top: 50%;
   transform: rotate(45deg);
-  /* bottom: 0; */
 }
 
 @media (max-width: 1000px) {
