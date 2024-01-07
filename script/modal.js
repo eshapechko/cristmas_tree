@@ -9,8 +9,6 @@ buttonsOrder.forEach((buttonOrder) => {
     overlayOrder.classList.add('overlay_active');
     const order = overlayOrder.querySelector('.modal__order');
     order.value = buttonOrder.dataset.order;
-    document.forms[0].bio.value = '';
-    console.log(document.forms[0].bio.value);
   });
 });
 
@@ -19,19 +17,22 @@ btnMore.forEach((btn) => {
     overlayConsultation.classList.toggle('overlay_active');
     const order = overlayOrder.querySelector('.modal__order');
     order.value = btn.dataset.order;
-    console.log('order.value: ', order.value);
   });
 });
 
 overlayOrder.addEventListener('click', ({target}) => {
   if (target === overlayOrder || target.closest('.modal__close')) {
     overlayOrder.classList.toggle('overlay_active');
+    document.forms[0].bio.value = '';
+    document.forms[0].tel.value = '';
   }
 });
 
 overlayConsultation.addEventListener('click', ({target}) => {
   if (target === overlayConsultation || target.closest('.modal__close')) {
     overlayConsultation.classList.toggle('overlay_active');
+    document.forms[1].bio.value = '';
+    document.forms[1].tel.value = '';
   }
 });
 
