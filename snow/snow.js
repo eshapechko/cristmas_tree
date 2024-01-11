@@ -33,12 +33,6 @@ const createSnow = (min, max, saturation) => {
       transform: translateY(100vh);
     }
   }
-
-  @media (max-width: 1000px) {
-    .snow {
-      display: none;
-    }
-  }
   `;
 
   const count = 4;
@@ -68,4 +62,8 @@ const createSnow = (min, max, saturation) => {
   setInterval(createSnowItem, saturation);
 };
 
-createSnow(5, 20, 100);
+const breakpoint = window.matchMedia('(max-width: 768px)');
+
+if (!breakpoint.matches) {
+  createSnow(5, 20, 100);
+}
